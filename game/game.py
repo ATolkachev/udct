@@ -43,12 +43,14 @@ def ask_a_question(dificulty):
 def find_in_question(question):
     for element in questions:
         if element in question:
+            print element, 'is in ', question
             index = question.index(element)
             try:
                 answer = input('Type an answer for ' + element + '\n')
                 if answer in answers:
                     question[index] = answer
                     print question
+                    find_in_question(question)
                 else:
                     print "your answer wrong, try again"
                     find_in_question(question)
