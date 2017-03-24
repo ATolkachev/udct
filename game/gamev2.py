@@ -62,29 +62,17 @@ def play_game(question_string, lob):
     for word in question_string:
         replacement = task_in_lob(word, lob)
         if replacement != None:
+            Показываем пользователю вопрос, спрашиваем ответ, проверяем ответ,
+            если все правильно меняем, если нет то повторяем
             word = word.replace(replacement, raw_input(' '.join(replaced)))
-            if word == answers[questionNumber]:
-                replaced.append(word)
-            else:
-                tries -= 1
-                if tries <= minAmountOfLives:
-                    print 'Game over!'
-                else:
-                    print "Try again"
-                    word = word.replace(replacement, raw_input(' '.join(replaced)))
+
         else:
             replaced.append(word)
 
 # Function to check if user answered right or wrong. Returns True or False
-def check_answer(user_input, correct_answers, question_number):
-    """This function accepts user_input from play_game, correctAnswers are list
-    from global variable and questionNumber from play_game"""
-    if user_input == correct_answers[question_number]:
-        print "That's Correct! \n"
-        return True
-    else:
-        print "You entered ", user_input, "Correct answer should be ", correct_answers[question_number]
-        return False
+def check_answer(current_array, questionNumber):
+    user_input = raw_input(' '.join(current_array)))
+    return user_input, questionNumber, tries
 
 
 # Start game here
