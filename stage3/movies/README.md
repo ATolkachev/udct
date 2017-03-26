@@ -7,7 +7,7 @@
 ### What's included
 
 movies/
-├── entertainment_center.py
-├── fresh_tomatoes.html
-├── fresh_tomatoes.py
-└── media.py
+| +-- entertainment_center.py
+| +-- fresh_tomatoes.html
+| +-- fresh_tomatoes.py
+| +-- media.py
