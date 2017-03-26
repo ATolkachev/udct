@@ -6,7 +6,8 @@
 
 ### What's included
 
-.movies/
+.
++-- movies/
 | +-- entertainment_center.py
 | +-- fresh_tomatoes.html
 | +-- fresh_tomatoes.py
