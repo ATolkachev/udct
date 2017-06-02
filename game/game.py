@@ -11,7 +11,7 @@ question3 = "If you multiply 2 by 2 correct answer is going to be: __1__. If you
 answers = ['4', '12', '21']
 
 #how many tries user have before we realise he is not good enough
-tries = 5
+tries = 6
 
 #Array to search through question
 list_of_blanks = ['__1__', '__2__', '__3__']  #Find list_of_blanks
