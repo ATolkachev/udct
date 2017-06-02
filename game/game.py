@@ -32,7 +32,7 @@ def level_of_dif():
     if level <= 4:
         return questions[:level], answers[:level]
     else:
-        print 'Sorry, but you can only choose between 1 to 4 here. PLease use numbers only'
+        print 'Sorry, but you can only choose between 1 to 4 here. Please use numbers only'
         return level_of_dif()
 
 
